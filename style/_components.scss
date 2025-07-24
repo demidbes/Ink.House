@@ -1,0 +1,102 @@
+.container {
+    margin-inline: auto;
+    max-width: 1140px;
+    padding-inline: 15px;
+
+    @include tablet {
+        padding-inline: 38px;
+    }
+
+    @include mobile {
+        padding-inline: 15px;
+    }
+}
+
+.hidden-mobile {
+    @include mobile {
+        display: none !important;
+    }
+}
+
+.visible-mobile {
+    @include mobile-above {
+        display: none !important;
+    }
+}
+
+.hidden-tablet {
+    @include tablet {
+        display: none !important;
+    }
+}
+
+.visible-tablet {
+    @include tablet-above {
+        display: none !important;
+    }
+}
+
+.hidden-desktop {
+    @include desktop {
+        display: none !important;
+    }
+}
+
+.visible-desktop {
+    @include desktop-above {
+        display: none !important;
+    }
+}
+
+.logo {
+    width: 143px;
+    height: 35px;
+}
+
+.burger-button {
+    @include reset-button;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        left: 5px;
+        width: 21px;
+        height: 2px;
+        background-color: #4C5866;
+        border-radius: 100px;
+    }
+
+    &::before {
+        top: 6px;
+        box-shadow: 0 8px #4C5866;
+        transition: box-shadow .2s .1s, top .2s .1s, transform .2s;
+    }
+
+    &::after {
+        bottom: 6px;
+        transition: bottom .2s .1s, transform .2s;
+    }
+
+    &.active::before {
+        background-color: #2C2D35;
+        top: 14px;
+        transform: rotate(45deg);
+        box-shadow: 0 0;
+        transition: box-shadow .1s, top .2s, transform .2s .1s;
+    }
+
+    &.active::after {
+        background-color: #2C2D35;
+        bottom: 14px;
+        transform: rotate(-45deg);
+        transition: bottom .2s, transform .2s .1s;
+    }
+}
+
+
+
