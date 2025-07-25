@@ -16,18 +16,18 @@ const catalogList = document.querySelector('.catalog__items');
 const catalogBtns = document.querySelectorAll('.catalog__button');
 
 const loadCatalog = (country) => {
-    catalogList.innerHTML = '';
-
+    catalogList.classList.add('is-loading');
     fetch ('data/data.json')
         .then((response) => {
             return response.json();
         })
 
         .then((data) => {
+            let newContentHtml = '';
             for (const item of data) {
                 if (item.country == country) {
                     // console.log(item)
-                    catalogList.innerHTML += `
+                    newContentHtml +=  `
 
                         <li class="catalog__item">
                             <article class="product">
@@ -38,13 +38,15 @@ const loadCatalog = (country) => {
                                     <span class="product__props">${item.props}</span>
                                     <span class="product__price">${item.price}</span>
                                 </div>
-                                <button class="product__button">В корзину</button>
+                                <button class="product__button link" type='button'>В корзину</button>
                             </article>
                         </li>
 
                     `
                 }
             }
+            catalogList.innerHTML = newContentHtml;
+            catalogList.classList.remove('is-loading');
         })
 }
 
@@ -53,6 +55,8 @@ loadCatalog('France');
 catalogBtns.forEach(el => {
   el.addEventListener('click', (e) => {
     e.preventDefault();
+
+
     const country = e.currentTarget.dataset.country;
 
     catalogBtns.forEach(el => { el.classList.remove('catalog__button--active'); });

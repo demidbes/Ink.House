@@ -81,6 +81,10 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
 h2 {
   font-size: 40px;
   line-height: 1.1;
@@ -226,9 +230,44 @@ section {
   }
 }
 
-.is-loading {
-  opacity: 1;
-  pointer-events: none;
+.link {
+  padding: 21px 60px;
+  border: 1px solid #598D66;
+  color: #598D66;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+.link:hover {
+  color: #F4F6F5;
+  background-color: #598D66;
+}
+.link:focus {
+  color: #598D66;
+  background-color: #D4E8D9;
+}
+.link:active {
+  color: #FFFFFF;
+  background-color: #376B44;
+}
+
+.link--orange {
+  padding: 21px 60px;
+  background-color: #EEDB6D;
+  color: #2C2D35;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+.link--orange:hover {
+  background-color: #FAEB97;
+}
+.link--orange:focus {
+  border: 1px solid #A38314;
+  background-color: #FAEB97;
+}
+.link--orange:active {
+  background-color: #D9B949;
 }
 
 .header {
@@ -397,6 +436,7 @@ section {
 .hero__title {
   line-height: 1.1;
   margin-bottom: 20px;
+  font-weight: 500;
   font-size: clamp(36px, 4.1666666667vw, 60px);
 }
 .hero__title > span {
@@ -412,11 +452,6 @@ section {
   .hero__descritpion {
     font-size: 18px;
   }
-}
-.hero__link {
-  padding: 21px 60px;
-  border: 1px solid #598D66;
-  color: #598D66;
 }
 
 .catalog {
@@ -450,6 +485,16 @@ section {
   padding: 10px 20px;
   background-color: #D4E8D9;
   border-radius: 20px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+.catalog__button--active {
+  background-color: #376B44;
+  color: #F4F6F5;
+}
+.catalog__button:hover {
+  color: #F4F6F5;
+  background-color: #598D66;
 }
 @media (max-width: 768px) {
   .catalog__button {
@@ -540,4 +585,63 @@ section {
   padding: 14.5px 53px;
   border: 1px solid #598D66;
   color: #598D66;
+}
+
+.newbies {
+  padding: 70px 0;
+  background-image: url(../images/newbackground.png);
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 768px) {
+  .newbies {
+    background-position: 60% 80%;
+    padding: 50px 0;
+  }
+}
+.newbies .newbies__title {
+  max-width: 540px;
+  font-weight: 500;
+  color: #F4F6F5;
+  padding-left: 100px;
+  background-image: url(../images/icons/Star.svg);
+  background-repeat: no-repeat;
+  background-size: 80px 80px;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .newbies .newbies__title {
+    background-size: 60px 60px;
+    padding-left: 80px;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .newbies .newbies__title {
+    background-size: 50px 50px;
+    padding-left: 70px;
+  }
+}
+.newbies .newbies__description {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #FFFFFF;
+  line-height: 1.5;
+  max-width: 540px;
+}
+@media (max-width: 576px) {
+  .newbies .newbies__description {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+.newbies .newbies__button {
+  display: inline-block;
+  margin-top: 60px;
+}
+@media (max-width: 576px) {
+  .newbies .newbies__button {
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=app.css.map */

@@ -177,6 +177,7 @@
     &__title {
         line-height: 1.1;
         margin-bottom: 20px;
+        font-weight: 500;
         @include fluid-text(60, 36);
 
         & > span {
@@ -192,11 +193,6 @@
         @include tablet {
             font-size: 18px;
         }
-    }
-    &__link {
-        padding: 21px 60px;
-        border: 1px solid #598D66;
-        color: #598D66;
     }
 }
 
@@ -230,6 +226,18 @@
         padding: 10px 20px;
         background-color: #D4E8D9;
         border-radius: 20px;
+        transition: color 0.3s ease, background-color 0.3s ease;
+        cursor: pointer;
+
+        &--active {
+            background-color: #376B44;
+            color: #F4F6F5;
+        }
+
+        &:hover {
+            color: #F4F6F5;
+            background-color: #598D66;
+        }
 
         @include tablet {
             font-size: 18px;
@@ -319,3 +327,60 @@
 
     }
 }
+
+.newbies {
+    padding: 70px 0;
+    background-image: url(../images/newbackground.png);
+    background-size: cover;
+    background-position: center;
+
+    @include tablet {
+        background-position: 60% 80%;
+        padding: 50px 0;
+    } 
+
+    .newbies__title {
+        max-width: 540px;
+        font-weight: 500;
+        color: #F4F6F5;
+        padding-left: 100px;
+        background-image: url(../images/icons/Star.svg);
+        background-repeat: no-repeat;
+        background-size: 80px 80px;
+        margin-bottom: 20px;
+
+        @include tablet {
+            background-size: 60px 60px;
+            padding-left: 80px;
+            margin-bottom: 16px;
+        }
+
+        @include mobile {
+            background-size: 50px 50px;
+            padding-left: 70px;
+            
+        }
+    }
+    .newbies__description {
+        margin-bottom: 20px;
+        font-size: 18px;
+        color: #FFFFFF;
+        line-height: 1.5;
+        max-width: 540px;
+
+        @include mobile {
+            margin-bottom: 16px;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+    }
+    .newbies__button {
+        display: inline-block;
+        margin-top: 60px;
+
+        @include mobile {
+            margin-top: 20px;
+        }
+    }
+}
+
