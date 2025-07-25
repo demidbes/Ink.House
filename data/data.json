@@ -1,0 +1,167 @@
+[
+
+
+    {
+        "country": "France",
+        "cover": "images/France/france-1.png",
+        "author": "Марсель Руссо",
+        "title": "Охота Амура",
+        "props": "Холст, масло (50х80) ",
+        "price": "14 500 руб"
+    },
+
+    {
+        "country": "France",
+        "cover": "images/France/france-2.png",
+        "author": "Анри Селин",
+        "title": "Дама с собачкой",
+        "props": "Акрил, бумага (50х80) ",
+        "price": "16 500 руб"
+    },
+
+    {
+        "country": "France",
+        "cover": "images/France/france-3.png",
+        "author": "Франсуа Дюпон",
+        "title": "Процедура",
+        "props": "Цветная литография (40х60) ",
+        "price": "20 000 руб"
+    },
+
+    {
+        "country": "France",
+        "cover": "images/France/france-4.png",
+        "author": "Луи Детуш",
+        "title": "Роза",
+        "props": "Бумага, акрил (50х80) ",
+        "price": "12 000 руб"
+    },
+
+    {
+        "country": "France",
+        "cover": "images/France/france-5.png",
+        "author": "Франсуа Дюпон",
+        "title": "Птичья трапеза",
+        "props": "Акрил, бумага (50х80) ",
+        "price": "16 500 руб"
+    },
+
+    {
+        "country": "France",
+        "cover": "images/France/france-6.png",
+        "author": "Пьер Моранж",
+        "title": "Пейзаж с рыбой",
+        "props": "Цветная литография (40х60) ",
+        "price": "20 000 руб"
+    },
+
+
+    {
+        "country": "Germany",
+        "cover": "images/Germany/1.jpg",
+        "author": "Марсель Руссо",
+        "title": "Охота Амура",
+        "props": "Холст, масло (50х80) ",
+        "price": "14 500 руб"
+    },
+
+    {
+        "country": "Germany",
+        "cover": "images/Germany/2.jpg",
+        "author": "Анри Селин",
+        "title": "Дама с собачкой",
+        "props": "Акрил, бумага (50х80) ",
+        "price": "16 500 руб"
+    },
+
+    {
+        "country": "Germany",
+        "cover": "images/Germany/3.jpg",
+        "author": "Франсуа Дюпон",
+        "title": "Процедура",
+        "props": "Цветная литография (40х60) ",
+        "price": "20 000 руб"
+    },
+
+    {
+        "country": "Germany",
+        "cover": "images/Germany/4.jpg",
+        "author": "Луи Детуш",
+        "title": "Роза",
+        "props": "Бумага, акрил (50х80) ",
+        "price": "12 000 руб"
+    },
+
+    {
+        "country": "Germany",
+        "cover": "images/Germany/5.jpg",
+        "author": "Франсуа Дюпон",
+        "title": "Птичья трапеза",
+        "props": "Акрил, бумага (50х80) ",
+        "price": "16 500 руб"
+    },
+
+    {
+        "country": "Germany",
+        "cover": "images/Germany/6.jpg",
+        "author": "Пьер Моранж",
+        "title": "Пейзаж с рыбой",
+        "props": "Цветная литография (40х60) ",
+        "price": "20 000 руб"
+    },
+
+    {
+        "country": "England",
+        "cover": "images/England/1.jpg",
+        "author": "Марсель Руссо",
+        "title": "Охота Амура",
+        "props": "Холст, масло (50х80) ",
+        "price": "14 500 руб"
+    },
+
+    {
+        "country": "England",
+        "cover": "images/England/2.jpg",
+        "author": "Анри Селин",
+        "title": "Дама с собачкой",
+        "props": "Акрил, бумага (50х80) ",
+        "price": "16 500 руб"
+    },
+
+    {
+        "country": "England",
+        "cover": "images/England/3.jpg",
+        "author": "Франсуа Дюпон",
+        "title": "Процедура",
+        "props": "Цветная литография (40х60) ",
+        "price": "20 000 руб"
+    },
+
+    {
+        "country": "England",
+        "cover": "images/England/4.jpg",
+        "author": "Луи Детуш",
+        "title": "Роза",
+        "props": "Бумага, акрил (50х80) ",
+        "price": "12 000 руб"
+    },
+
+    {
+        "country": "England",
+        "cover": "images/England/5.jpg",
+        "author": "Франсуа Дюпон",
+        "title": "Птичья трапеза",
+        "props": "Акрил, бумага (50х80) ",
+        "price": "16 500 руб"
+    },
+
+    {
+        "country": "England",
+        "cover": "images/England/6.jpg",
+        "author": "Пьер Моранж",
+        "title": "Пейзаж с рыбой",
+        "props": "Цветная литография (40х60) ",
+        "price": "20 000 руб"
+    }
+]
+    

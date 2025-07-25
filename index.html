@@ -9,17 +9,17 @@
 <body>
     <header class="header">
         <div class="header__inner container">
-            <a href="#" class="header__logo-link">
+            <a href="" class="header__logo-link">
                 <img src="images/icons/logo.svg" alt="Logotip" class="logo header__logo-image">
             </a>
             <nav class="header__nav">
                 <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Репродукции</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Новинки</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">О нас</a></li>
+                    <li class="header__nav-item"><a href="" class="header__nav-link">Репродукции</a></li>
+                    <li class="header__nav-item"><a href="" class="header__nav-link">Новинки</a></li>
+                    <li class="header__nav-item"><a href="" class="header__nav-link">О нас</a></li>
                 </ul>
                 <button class="burger-button visible-mobile"></button>
-                <a href="#" class="header__nav-cart-link">
+                <a href="" class="header__nav-cart-link">
                     <svg class="header__nav-cart">
                         <path d="M9.25001 21.1667C9.75627 21.1667 10.1667 20.7563 10.1667 20.25C10.1667 19.7438 9.75627 19.3334 9.25001 19.3334C8.74375 19.3334 8.33334 19.7438 8.33334 20.25C8.33334 20.7563 8.74375 21.1667 9.25001 21.1667Z" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M19.3333 21.1667C19.8396 21.1667 20.25 20.7563 20.25 20.25C20.25 19.7438 19.8396 19.3334 19.3333 19.3334C18.8271 19.3334 18.4167 19.7438 18.4167 20.25C18.4167 20.7563 18.8271 21.1667 19.3333 21.1667Z" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -29,6 +29,30 @@
             </nav>
         </div>
     </header>
+    <main>
+        <section class="hero container">
+            <figure>
+                <img src="images/hero-image-full.png" alt="bird">
+                <figcaption>
+                    <h1 class="hero__title">Реплики картин от <span>Ink. House</span></h1>
+                    <p class="hero__descritpion">Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.</p>
+                    <a href="" class="hero__link">Продукция</a>
+                </figcaption>
+            </figure>
+        </section>
+        <section class="catalog container" id="catalog">
+            <div class="catalog__top">
+                <h2 class="catalog__title">Репродукции</h2>
+                <ul class="catalog__buttons">
+                    <li class="catalog__buttons-item"><button class="catalog__button catalog__button--active" data-country="France" type="button">Франция</button></li>
+                    <li class="catalog__buttons-item"><button class="catalog__button" data-country="Germany" type="button">Германия</button></li>
+                    <li class="catalog__buttons-item"><button class="catalog__button" data-country="England" type="button">Англия</button></li>
+                </ul>
+            </div>
+            <ul class="catalog__items grid">
+            </ul>  
+        </section>
+    </main>
     <script src="script/script.js"></script>
 </body>
 </html>

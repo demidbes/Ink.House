@@ -98,5 +98,18 @@
     }
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
 
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
+.is-loading {
+    opacity: 1;
+    pointer-events: none;
+}

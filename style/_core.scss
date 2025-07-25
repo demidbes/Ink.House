@@ -57,9 +57,7 @@ img {
 }
 
 /* Указываем понятную периодичность в потоке данных у article*/
-article > * + * {
-  margin-top: 1em;
-}
+
 
 /* Наследуем шрифты для инпутов и кнопок */
 input,
@@ -85,6 +83,31 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+h2 {
+  font-size: 40px;
+  line-height: 1.1;
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 24px;
+  }
+}
+
+section {
+  margin: 70px 0;
+
+ @media (max-width: 768px) {
+  margin: 50px 0;
+ }
+
+ @media (max-width: 576px) {
+  margin: 60px 0;
+ }
+}
+
 
 //------------------------------------------------------------
 
@@ -100,11 +123,11 @@ a {
 $desktop: 1440px;
 $desktop-above: 1441px;
 
-$tablet: 690px;
-$tablet-above: 691px;
+$tablet: 768px;
+$tablet-above: 769px;
 
-$mobile: 510px;
-$mobile-above: 511px;
+$mobile: 576px;
+$mobile-above: 577px;
 
 
 @mixin desktop {
@@ -151,10 +174,18 @@ $mobile-above: 511px;
 
 //-----------------------------------------------------------------------
 
+@mixin fluid-text($max: 48, $min: 16) {
+  font-size: clamp(#{$min}px, #{$max / 1440 * 100}vw, #{$max}px);
+}
+
 @mixin reset-button {
   padding: 0;
   background-color: transparent;
   border: none;
+}
+
+@mixin reset-list {
+  padding: 0;
 }
 
 //------------------------------------------------------------------------
