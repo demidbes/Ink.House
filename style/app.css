@@ -521,7 +521,6 @@ section {
 .product {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 20px;
   height: 100%;
   background-color: #E1EDE6;
@@ -529,6 +528,8 @@ section {
 .product__descritpion {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   padding-top: 20px;
   padding-bottom: 10px;
 }
@@ -595,8 +596,13 @@ section {
 }
 @media (max-width: 768px) {
   .newbies {
-    background-position: 60% 80%;
     padding: 50px 0;
+  }
+}
+@media (max-width: 576px) {
+  .newbies {
+    background-image: url(../images/newbackground-mobile.png);
+    background-position: 0 0;
   }
 }
 .newbies .newbies__title {
@@ -607,6 +613,7 @@ section {
   background-image: url(../images/icons/Star.svg);
   background-repeat: no-repeat;
   background-size: 80px 80px;
+  background-position: left center;
   margin-bottom: 20px;
 }
 @media (max-width: 768px) {
@@ -644,4 +651,40 @@ section {
   .newbies .newbies__button {
     margin-top: 20px;
   }
+}
+
+.team__image {
+  grid-column: span 5;
+}
+@media (max-width: 768px) {
+  .team__image {
+    grid-column: span 9;
+  }
+}
+.team__description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  grid-column: span 7;
+  align-self: self-end;
+  padding-bottom: 44px;
+}
+@media (max-width: 768px) {
+  .team__description {
+    grid-column: span 12;
+  }
+}
+.team__text {
+  font-size: 18px;
+}
+.team__persons {
+  display: flex;
+  gap: 30px;
+  padding: 0;
+}
+.team__person {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 80px;
+  aspect-ratio: 1;
 }/*# sourceMappingURL=app.css.map */

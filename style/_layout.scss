@@ -264,7 +264,6 @@
 .product {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding: 20px;
     height: 100%;
 
@@ -275,6 +274,8 @@
     &__descritpion {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
         padding-top: 20px;
         padding-bottom: 10px;
 
@@ -334,10 +335,15 @@
     background-size: cover;
     background-position: center;
 
+
     @include tablet {
-        background-position: 60% 80%;
         padding: 50px 0;
-    } 
+    }
+
+    @include mobile {
+        background-image: url(../images/newbackground-mobile.png);
+        background-position: 0 0;
+    }
 
     .newbies__title {
         max-width: 540px;
@@ -347,6 +353,7 @@
         background-image: url(../images/icons/Star.svg);
         background-repeat: no-repeat;
         background-size: 80px 80px;
+        background-position: left center;
         margin-bottom: 20px;
 
         @include tablet {
@@ -383,4 +390,46 @@
         }
     }
 }
+
+.team {
+    &__image {
+        grid-column: span 5;
+
+        @include tablet {
+            grid-column: span 9;
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        grid-column: span 7;
+        align-self: self-end;
+        padding-bottom: 44px;
+
+        @include tablet {
+            grid-column: span 12;
+        }
+    }
+    
+    &__text {
+        font-size: 18px;
+    }
+
+    
+    
+    &__persons {
+        display: flex;
+        gap: 30px;
+        padding: 0;
+    }
+    &__person {
+        object-fit: cover;
+        border-radius: 50%;
+        width: 80px;
+        aspect-ratio: 1;
+    }
+}
+
 

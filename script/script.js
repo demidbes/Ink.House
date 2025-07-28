@@ -16,7 +16,6 @@ const catalogList = document.querySelector('.catalog__items');
 const catalogBtns = document.querySelectorAll('.catalog__button');
 
 const loadCatalog = (country) => {
-    catalogList.classList.add('is-loading');
     fetch ('data/data.json')
         .then((response) => {
             return response.json();
@@ -25,7 +24,7 @@ const loadCatalog = (country) => {
         .then((data) => {
             let newContentHtml = '';
             for (const item of data) {
-                if (item.country == country) {
+                if (item.country === country) {
                     // console.log(item)
                     newContentHtml +=  `
 
@@ -46,7 +45,6 @@ const loadCatalog = (country) => {
                 }
             }
             catalogList.innerHTML = newContentHtml;
-            catalogList.classList.remove('is-loading');
         })
 }
 
